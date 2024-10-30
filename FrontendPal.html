@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pal World Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+        form, table {
+            margin: 20px auto;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 80%;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pal World Tracker</h1>
+
+    <form method="POST" action="breeding.php">
+        <h3>Search Breeding Result</h3>
+        <select name="parent1" required>
+            <option value="">Select Parent 1</option>
+            <option value="1">Lamball</option>
+            <option value="2">Cattiva</option>
+            <option value="3">Lifmunk</option>
+            <option value="4">Foxparks</option>
+            <option value="5">Aquakin</option>
+        </select>
+
+        <select name="parent2" required>
+            <option value="">Select Parent 2</option>
+            <option value="1">Lamball</option>
+            <option value="2">Cattiva</option>
+            <option value="3">Lifmunk</option>
+            <option value="4">Foxparks</option>
+            <option value="5">Aquakin</option>
+        </select>
+
+        <button type="submit">Find Offspring</button>
+    </form>
+
+    <div id="results">
+        <!-- Query results will display here -->
+    </div>
+
+</body>
+</html>
