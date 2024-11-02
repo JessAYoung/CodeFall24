@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Pal World Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Header with Navigation -->
+<header>
+    <h1>Pal World Tracker</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="palopedia.html">Palopedia</a></li>
+            <li><a href="tracker.html">Tracker</a></li>
+            <li><a href="breeding.html">Breeding Farm</a></li>
+            <li><a href="support.html">Support Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+    <div class="login-container">
+        <h2>Login to Pal World Tracker</h2>
+        <form action="authenticate.php" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+
+            <p class="signup-prompt">Don't have an account? <a href="signup.html">Sign up here</a></p>
+        </form>
+    </div>
+
+</body>
+</html>

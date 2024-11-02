@@ -4,40 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pal World Tracker</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-        }
-        form, table {
-            margin: 20px auto;
-            padding: 15px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        table {
-            width: 80%;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-    </style>
 </head>
 <body>
-
-    <h1>Pal World Tracker</h1>
-
+    <header>
+        <!-- Header with Navigation -->
+        <h1>Pal World Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="palopedia.html">Palopedia</a></li>
+                <li><a href="tracker.html">Tracker</a></li>
+                <li><a href="breeding.html">Breeding Farm</a></li>
+                <li><a href="support.html">Support Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Search Form -->
     <form method="POST" action="breeding.php">
         <h3>Search Breeding Result</h3>
         <select name="parent1" required>
@@ -61,6 +43,7 @@
         <button type="submit">Find Offspring</button>
     </form>
 
+    <!-- Results Section -->
     <div id="results">
         <!-- Query results will display here -->
     </div>

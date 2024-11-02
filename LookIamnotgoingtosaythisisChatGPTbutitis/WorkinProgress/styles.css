@@ -1,0 +1,59 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Pokedex Section */
+.pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.pokedex-card {
+    background-color: #fff;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.pokedex-card h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.pokedex-card p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Special Styling for Legendary Pals */
+.pokedex-card p:last-child {
+    font-weight: bold;
+    color: #e63946;
+}
